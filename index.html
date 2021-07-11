@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form 2</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+
+<style>
+@media (min-width: 718px) {
+    .container {
+        max-width: 790px;
+    }
+    .label h1,
+    .jumbotron .h1 {
+        font-size: 70px;
+    }
+}
+body {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-image: url("../Multimedia/formfondo25.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Tw Cen MT;
+}
+
+h1{
+    color: rgb(147, 134, 235);
+}
+
+.box {
+    border: 2px solid #2E64FE;
+    background: #E0F2F7;
+    padding: 20px;
+    margin: 200px;
+    width: 1000px;
+    height: 610px;
+  }
+
+.form-control{
+    border: 1px solid rgb(117, 104, 225);
+}
+
+.p {
+    text-shadow: pink;
+
+}
+ 
+.btn {
+    margin-top: 20px;
+}
+#reserva {
+    margin: 30px;
+}
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #F781F3;
+    border-radius: 5px;
+  }
+  .boton_personalizado:hover{
+    color: #F5DA81;
+    background-color: ;
+    text-decoration: none;
+  }
+
+</style>
+
+
+    <body>
+
+              <form name="contact" method="POST" data-netlify="true">
+
+  
+        <div class="box" alingh="text-center">
+        <div class="mb-3">
+            <h4><label for="exampleFormControlInput1" class="form-label">Full name</label></h4>
+            <input type="text" name="Full name" class="form-control" id="exampleFormControlInput1" placeholder="Lesly Hernández">
+          </div>
+          <div class="mb-3">
+            <h4><label for="exampleFormControlInput1" class="form-label">Street Address 1</label></h4>
+            <input type="text" name="address" class="form-control" id="exampleFormControlInput1" placeholder="Reparto San José 2, pasaje 26, block N, casa#62, Soyapango, San Salvador">
+          </div>
+          <div class="mb-3">
+            <h4><label for="exampleFormControlInput1" class="form-label">Street Address 2</label></h4>
+            <input type="text" name="address" class="form-control" id="exampleFormControlInput1" placeholder="Residencial Altavista, polígono 29, pasaje 29 B , casa#51, San Martín, San Salvador">
+          </div>
+        <div class="mb-3">
+            <h4><label for="exampleFormControlInput1" class="form-label">City</label></h4>
+            <input type="text" name="city" class="form-control" id="exampleFormControlInput1" placeholder="Soyapango">
+          </div>
+          <div class="mb-3">
+            <h4><label for="exampleFormControlInput1"  class="form-label"> Country</label></h4>
+            <select id="cboCategorias" class="form-control" onchange="cargarTareas()">
+                <option value="" type="texto" selected="selected">Canadá</option>
+                <option>Francia</option>
+                <option>Europa</option>
+                <option>Puerto Rico</option>
+                <option>Perú</option>
+                <option>El Salvaodr</option>
+                <option>Otro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <h4><label for="exampleFormControlInput1" class="form-label">Zip Code</label></h4>
+            <input type="Code" name="ZIP code" class="form-control" id="exampleFormControlInput1" placeholder="######">
+          </div>
+          <br>
+          <br>
+          <input type="submit" class="boton_personalizado"></input>
+          </form>
+    </body>
+</html>
